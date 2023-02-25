@@ -1,20 +1,19 @@
-import React from "react";
-
+import { Children, useMemo } from "react";
 import { Render } from "./components/Render";
 
 interface ConditionalMatchProps {
   fallback: JSX.Element;
-  children: JSX.Element;
+  children?: JSX.Element | JSX.Element[];
 }
 
 const ConditionalMatch = ({ fallback, children }: ConditionalMatchProps): JSX.Element => {
-  const matchedChild = React.useMemo(() => {
+  const matchedChild = useMemo(() => {
     let childToRender: JSX.Element | null = null;
 
-    React.Children.forEach(children, (child) => {
+    Children.forEach(children, (child) => {
       if (childToRender) return child;
 
-      if (child.props?.when) {
+      if (child?.props?.when) {
         childToRender = child;
       }
 

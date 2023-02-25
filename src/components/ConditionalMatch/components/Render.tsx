@@ -1,5 +1,5 @@
 type RenderProps = {
-  when: undefined | null | false;
+  when: undefined | null | boolean;
   children: JSX.Element;
 };
 
