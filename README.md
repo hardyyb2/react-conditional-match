@@ -2,6 +2,8 @@
 
 A lightweight and flexible React component for conditional rendering that supports multiple matches and fallbacks.
 
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@hbkit/react-conditional-match)](https://bundlephobia.com/package/@hbkit/react-conditional-match)
+
 ## Features
 
 - **Supports multiple matches**: Use the <code>ConditionalMatch </code>component to render multiple children based on the conditions you define. The component will render all children that match the condition.
