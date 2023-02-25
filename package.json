@@ -1,17 +1,48 @@
 {
   "name": "conditional-match",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A flexible and reusable React component for conditionally rendering child elements. The component supports options for handling multiple matching children and custom fallbacks, and is lightweight and easy to use. This component can help simplify complex rendering logic in your React application and remove the need for ternary statements and if else blocks.",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "npm build:esm && npm build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "lint-fix": "eslint --fix \"{**/*,*}.{js,ts,jsx,tsx}\"",
-    "test": "vitest"
+    "test": "vitest",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run prettier && npm run lint"
   },
-  "keywords": [],
-  "author": "hardyyb2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hardyyb2/prokit.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "component",
+    "conditional rendering",
+    "multiple matches",
+    "fallback",
+    "lightweight",
+    "flexible",
+    "reusable",
+    "UI",
+    "rendering logic",
+    "JSX"
+  ],
+  "author": "hardik badola (hardyyb2)",
   "license": "MIT",
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
