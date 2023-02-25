@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@hbkit/react-conditional-match': ^1.0.0
+  '@hbkit/react-conditional-match': ^1.0.1
   '@types/react': ^18.0.27
   '@types/react-dom': ^18.0.10
   '@vitejs/plugin-react-swc': ^3.0.0
@@ -11,7 +11,7 @@ specifiers:
   vite: ^4.1.0
 
 dependencies:
-  '@hbkit/react-conditional-match': 1.0.0_react@18.2.0
+  '@hbkit/react-conditional-match': 1.0.1_react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -222,8 +222,8 @@ packages:
     dev: true
     optional: true
 
-  /@hbkit/react-conditional-match/1.0.0_react@18.2.0:
-    resolution: {integrity: sha512-3+kqR8kECeLbCezx/I4EmRUfYFOLH3UA2ZKAHBziKLrJijvH0qUPLyh5sJOhw1VnCU7y4RkB3tapJTxlGwC7pg==}
+  /@hbkit/react-conditional-match/1.0.1_react@18.2.0:
+    resolution: {integrity: sha512-dPKFVpZDpJXQ8VZya6a2qgbEpb6Yhrk4qChQFu0WwcatJggoW1XomQeLLZq40vXZE/WYwchxMxg89b2PO6/DjQ==}
     peerDependencies:
       react: '>=17'
     dependencies:

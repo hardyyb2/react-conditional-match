@@ -1,6 +1,6 @@
 {
   "name": "@hbkit/react-conditional-match",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A flexible and reusable React component for conditionally rendering child elements. The component supports options for handling multiple matching children and custom fallbacks, and is lightweight and easy to use. This component can help simplify complex rendering logic in your React application and remove the need for ternary statements and if else blocks.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hardyyb2/prokit.git"
+    "url": "git+https://github.com/hardyyb2/hbkit.git"
   },
   "keywords": [
     "react",
