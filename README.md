@@ -1,8 +1,9 @@
 # Conditional Match
 
-A lightweight and flexible React component for conditional rendering that supports multiple matches and fallbacks.
-
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/@hbkit/react-conditional-match)](https://bundlephobia.com/package/@hbkit/react-conditional-match)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A lightweight and flexible React component for conditional rendering that supports multiple matches and fallbacks.
 
 ## Features
 
@@ -11,6 +12,24 @@ A lightweight and flexible React component for conditional rendering that suppor
 - **Lightweight and flexible**: The ConditionalMatch component is small and can be easily integrated into any React project. Use it to implement complex rendering logic without having to write complex conditional logic with ternaries or if-else blocks.
 
 ## Installation
+
+You can install the <code>@hbkit/react-conditional-match</code> component using npm or yarn or pnpm:
+
+```
+npm i @hbkit/react-conditional-match
+```
+
+or
+
+```
+yarn add @hbkit/react-conditional-match
+```
+
+or
+
+```
+pnpm i @hbkit/react-conditional-match
+```
 
 ## Usage
 
