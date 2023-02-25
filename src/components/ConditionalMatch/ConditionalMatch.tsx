@@ -7,10 +7,7 @@ interface ConditionalMatchProps {
   children: JSX.Element;
 }
 
-const ConditionalMatch = ({
-  fallback,
-  children,
-}: ConditionalMatchProps): JSX.Element => {
+const ConditionalMatch = ({ fallback, children }: ConditionalMatchProps): JSX.Element => {
   const matchedChild = React.useMemo(() => {
     let childToRender: JSX.Element | null = null;
 
