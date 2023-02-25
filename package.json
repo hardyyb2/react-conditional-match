@@ -1,5 +1,6 @@
 {
-  "name": "conditional-match",
+  "name": "react-conditional-match",
+  "scope": "hbkit",
   "version": "1.0.0",
   "description": "A flexible and reusable React component for conditionally rendering child elements. The component supports options for handling multiple matching children and custom fallbacks, and is lightweight and easy to use. This component can help simplify complex rendering logic in your React application and remove the need for ternary statements and if else blocks.",
   "main": "./dist/cjs/index.js",
