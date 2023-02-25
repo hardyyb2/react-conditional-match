@@ -15,6 +15,10 @@ const ConditionalMatch = ({ fallback, children = null, multiMatch = false }: Con
     const childrenToRender: JSX.Element[] = [];
 
     Children.forEach(children, (child) => {
+      if (child?.type !== Render) {
+        return;
+      }
+
       if (!multiMatch && childrenToRender?.length >= 1) {
         return child;
       }
