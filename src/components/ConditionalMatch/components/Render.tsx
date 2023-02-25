@@ -1,5 +1,7 @@
 type RenderProps = {
+  /** The condition to determine whether to render the children */
   when: undefined | null | boolean;
+  /** The children to render if the condition is true */
   children: JSX.Element;
 };
 
