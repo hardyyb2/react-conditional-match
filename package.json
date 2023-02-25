@@ -13,7 +13,7 @@
     "lint-fix": "eslint --fix \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "test": "vitest",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run prettier && npm run lint"
+    "prepublishOnly": "npm test && npm run lint"
   },
   "repository": {
     "type": "git",
