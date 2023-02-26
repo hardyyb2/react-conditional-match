@@ -9,7 +9,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npm build:esm && npm build:cjs",
+    "build": "pnpm build:esm && pnpm build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",

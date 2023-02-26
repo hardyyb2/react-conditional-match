@@ -1,1 +1,3 @@
-export * from "./ConditionalMatch";
+import { ConditionalMatch } from "./ConditionalMatch";
+
+export { ConditionalMatch };
