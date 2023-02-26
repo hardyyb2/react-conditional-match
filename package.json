@@ -9,7 +9,9 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "npm build:esm && npm build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "lint-fix": "eslint --fix \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "test": "vitest",
