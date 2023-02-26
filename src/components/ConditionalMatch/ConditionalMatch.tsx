@@ -1,4 +1,4 @@
-import React, { Children, useMemo } from "react";
+import { Children, Fragment, useMemo } from "react";
 import { Render } from "./components/Render";
 
 interface ConditionalMatchProps {
@@ -34,7 +34,7 @@ const ConditionalMatch = ({ fallback, children = null, multiMatch = false }: Con
   }, [children, multiMatch]);
 
   if (matchedChildren?.length) {
-    return <React.Fragment>{matchedChildren}</React.Fragment>;
+    return <Fragment>{matchedChildren}</Fragment>;
   }
 
   return fallback;
