@@ -51,3 +51,26 @@ const MyComponent = () => {
   );
 };
 ```
+
+In this example, the ConditionalMatch component will render the first child that matches one of the conditions. If none of the children match the condition, the component will render the fallback element.
+
+## Props
+
+### _ConditionalMatch_
+
+| Prop name  | Type                                   | Default value | Description                                                               |
+| ---------- | -------------------------------------- | ------------- | ------------------------------------------------------------------------- |
+| fallback   | `JSX.Element`                          | -             | The fallback element to render if no children match the condition         |
+| children   | `JSX.Element \| JSX.Element[] \| null` | `null`        | The children to search for a matching condition                           |
+| multiMatch | `boolean`                              | `false`       | Whether to render all matching children (if true) or only the first match |
+
+### _Render_
+
+| Prop name | Type                                | Description                                               |
+| --------- | ----------------------------------- | --------------------------------------------------------- |
+| when      | `T \| undefined \| null \| boolean` | The condition to determine whether to render the children |
+| children  | ReactNode                           | The children to render if the condition is true           |
+
+## Contributing
+
+If you find a bug or have an idea for a new feature, feel free to submit an issue or pull request on the GitHub repository: [https://github.com/hardyyb2/dx-kit.git](https://github.com/hardyyb2/dx-kit.git)
