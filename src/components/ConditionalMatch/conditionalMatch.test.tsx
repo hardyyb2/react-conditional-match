@@ -4,7 +4,7 @@ import { ConditionalMatch } from "./ConditionalMatch";
 
 describe("ConditionalMatch ", () => {
   it("renders fallback when no children are passed", () => {
-    render(<ConditionalMatch fallback={<div>Fallback</div>} />);
+    render(<ConditionalMatch fallback={"Fallback"} />);
     expect(screen.getByText("Fallback")).toBeInTheDocument();
   });
 

@@ -1,9 +1,9 @@
-import { Children, Fragment, useMemo } from "react";
+import { Children, Fragment, ReactNode, useMemo } from "react";
 import { Render } from "./components/Render";
 
 interface ConditionalMatchProps {
   /** The fallback element to render if no children match the condition */
-  fallback: JSX.Element;
+  fallback: ReactNode;
   /** The children to search for a matching condition */
   children?: JSX.Element | JSX.Element[] | null;
   /**  Whether to render all matching children (if true) or only the first matching child (if false) */
@@ -35,7 +35,7 @@ const ConditionalMatch = ({ fallback, children = null, multiMatch = false }: Con
     return <Fragment>{matchedChildren}</Fragment>;
   }
 
-  return fallback;
+  return <Fragment>{fallback}</Fragment>;
 };
 
 const ConditionalMatchCompound = Object.assign(ConditionalMatch, {

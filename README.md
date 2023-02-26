@@ -54,6 +54,12 @@ const MyComponent = () => {
 
 In this example, the ConditionalMatch component will render the first child that matches one of the conditions. If none of the children match the condition, the component will render the fallback element.
 
+### Usage compared with _if-else_ and _ternary_
+
+| if-else                          | ternary                          | ConditionalMatch                                    |
+| -------------------------------- | -------------------------------- | --------------------------------------------------- |
+| ![if-else](./assets/if-else.png) | ![ternary](./assets/ternary.png) | ![ConditionalMatch](./assets/conditional-match.png) |
+
 ## Props
 
 ### _ConditionalMatch_
