@@ -1,6 +1,6 @@
 # Conditional Match
 
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@hbkit/react-conditional-match)](https://bundlephobia.com/package/@hbkit/react-conditional-match)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@dx-kit/react-conditional-match)](https://bundlephobia.com/package/@dx-kit/react-conditional-match)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A lightweight and flexible React component for conditional rendering that supports multiple matches and fallbacks.
@@ -13,22 +13,22 @@ A lightweight and flexible React component for conditional rendering that suppor
 
 ## Installation
 
-You can install the <code>@hbkit/react-conditional-match</code> component using npm or yarn or pnpm:
+You can install the <code>@dx-kit/react-conditional-match</code> component using npm or yarn or pnpm:
 
 ```
-npm i @hbkit/react-conditional-match
-```
-
-or
-
-```
-yarn add @hbkit/react-conditional-match
+npm i @dx-kit/react-conditional-match
 ```
 
 or
 
 ```
-pnpm i @hbkit/react-conditional-match
+yarn add @dx-kit/react-conditional-match
+```
+
+or
+
+```
+pnpm i @dx-kit/react-conditional-match
 ```
 
 ## Usage
@@ -37,7 +37,7 @@ To use the ConditionalMatch component in your React project, you need to import 
 
 ```typescript
 import React, { useState } from "react";
-import { ConditionalMatch } from "conditional-match";
+import { ConditionalMatch } from "@dx-kit/react-conditional-match";
 
 const MyComponent = () => {
   const [val, setVal] = useState(2);
