@@ -20,14 +20,12 @@ const ConditionalMatch = ({ fallback, children = null, multiMatch = false }: Con
       }
 
       if (!multiMatch && childrenToRender?.length >= 1) {
-        return child;
+        return;
       }
 
       if (child?.props?.when) {
         childrenToRender.push(child);
       }
-
-      return child;
     });
 
     return childrenToRender;

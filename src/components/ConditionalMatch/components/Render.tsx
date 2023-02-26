@@ -1,16 +1,18 @@
-type RenderProps = {
+import { Fragment, ReactNode } from "react";
+
+type RenderProps<T> = {
   /** The condition to determine whether to render the children */
-  when: undefined | null | boolean;
+  when: T | undefined | null | boolean;
   /** The children to render if the condition is true */
-  children: JSX.Element;
+  children: ReactNode;
 };
 
-const Render = ({ when, children }: RenderProps): JSX.Element | null => {
+function Render<T>({ children, when }: RenderProps<T>): JSX.Element | null {
   if (!when) {
     return null;
   }
 
-  return children;
-};
+  return <Fragment>{children}</Fragment>;
+}
 
 export { Render };
