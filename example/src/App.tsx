@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { ConditionalMatch } from "@hbkit/react-conditional-match";
+import { ConditionalMatch } from "@dx-kit/react-conditional-match";
 
 function App() {
   const [count, setCount] = useState(0);
