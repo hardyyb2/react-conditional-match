@@ -1,6 +1,6 @@
 # Conditional Match
 
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@dx-kit/react-conditional-match)](https://bundlephobia.com/package/@dx-kit/react-conditional-match)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@dx-kit/react-conditional-match@latest)](https://bundlephobia.com/package/@dx-kit/react-conditional-match)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A lightweight and flexible React component for conditional rendering that supports multiple matches and fallbacks.

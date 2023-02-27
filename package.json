@@ -1,6 +1,6 @@
 {
   "name": "@dx-kit/react-conditional-match",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "A flexible and reusable React component for conditionally rendering child elements. The component supports options for handling multiple matching children and custom fallbacks, and is lightweight and easy to use. This component can help simplify complex rendering logic in your React application and remove the need for ternary statements and if else blocks.",
   "main": "./dist/index.esm.js",
   "module": "./dist/index.cjs.js",
@@ -14,8 +14,9 @@
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "lint-fix": "eslint --fix \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "test": "vitest",
+    "coverage": "vitest run --coverage",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint"
+    "prepublishOnly": "npm coverage && npm run lint"
   },
   "repository": {
     "type": "git",
@@ -61,6 +62,7 @@
     "@typescript-eslint/eslint-plugin": "^5.53.0",
     "@typescript-eslint/parser": "^5.53.0",
     "@vitejs/plugin-react": "^3.1.0",
+    "@vitest/coverage-c8": "^0.29.1",
     "esbuild": "^0.17.10",
     "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",
