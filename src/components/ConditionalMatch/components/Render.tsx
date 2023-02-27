@@ -1,10 +1,10 @@
-import { Fragment, ReactNode } from "react";
+import React from "react";
 
 type RenderProps<T> = {
   /** The condition to determine whether to render the children */
   when: T | undefined | null | boolean;
   /** The children to render if the condition is true */
-  children: ReactNode;
+  children: React.ReactNode;
 };
 
 function Render<T>({ children, when }: RenderProps<T>): JSX.Element | null {
@@ -12,7 +12,7 @@ function Render<T>({ children, when }: RenderProps<T>): JSX.Element | null {
     return null;
   }
 
-  return <Fragment>{children}</Fragment>;
+  return <React.Fragment>{children}</React.Fragment>;
 }
 
 export { Render };
