@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const esbuild = require("esbuild");
+
 const { dependencies } = require("./package.json");
 
 const sharedConfig = {
