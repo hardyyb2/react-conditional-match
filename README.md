@@ -5,6 +5,8 @@
 
 A lightweight and flexible React component for conditional rendering that supports multiple matches and fallbacks.
 
+[DEMO](https://stackblitz.com/edit/vitejs-vite-sz2s9x)
+
 ## Features
 
 - **Supports multiple matches**: Use the <code>ConditionalMatch </code>component to render multiple children based on the conditions you define. The component will render all children that match the condition.
@@ -32,6 +34,8 @@ pnpm i @dx-kit/react-conditional-match
 ```
 
 ## Usage
+
+> **See more examples here** - [https://stackblitz.com/edit/vitejs-vite-sz2s9x](https://stackblitz.com/edit/vitejs-vite-sz2s9x)
 
 To use the ConditionalMatch component in your React project, you need to import it and use it in your JSX code.
 
@@ -66,7 +70,7 @@ In this example, the ConditionalMatch component will render the first child that
 
 | Prop name  | Type                                   | Default value | Description                                                               |
 | ---------- | -------------------------------------- | ------------- | ------------------------------------------------------------------------- |
-| fallback   | `JSX.Element`                          | -             | The fallback element to render if no children match the condition         |
+| fallback   | `React.ReactNode`                      | -             | The fallback element to render if no children match the condition         |
 | children   | `JSX.Element \| JSX.Element[] \| null` | `null`        | The children to search for a matching condition                           |
 | multiMatch | `boolean`                              | `false`       | Whether to render all matching children (if true) or only the first match |
 
@@ -75,7 +79,7 @@ In this example, the ConditionalMatch component will render the first child that
 | Prop name | Type                                | Description                                               |
 | --------- | ----------------------------------- | --------------------------------------------------------- |
 | when      | `T \| undefined \| null \| boolean` | The condition to determine whether to render the children |
-| children  | ReactNode                           | The children to render if the condition is true           |
+| children  | `React.ReactNode`                   | The children to render if the condition is true           |
 
 ## Contributing
 
