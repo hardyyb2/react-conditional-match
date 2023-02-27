@@ -1,6 +1,6 @@
 {
   "include": ["src"],
-  "exclude": ["dist", "node_modules"],
+  "exclude": ["dist", "node_modules", "build.js"],
   "compilerOptions": {
     "module": "esnext",
     "lib": ["dom", "esnext"],

@@ -1,7 +1,7 @@
 import { Children, Fragment, ReactNode, useMemo } from "react";
 import { Render } from "./components/Render";
 
-interface ConditionalMatchProps {
+export interface ConditionalMatchProps {
   /** The fallback element to render if no children match the condition */
   fallback: ReactNode;
   /** The children to search for a matching condition */
