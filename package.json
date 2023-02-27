@@ -44,8 +44,7 @@
   "files": [
     "dist",
     "LICENSE",
-    "README.md",
-    "assets"
+    "README.md"
   ],
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
