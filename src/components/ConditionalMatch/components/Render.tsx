@@ -7,12 +7,5 @@ type RenderProps<T> = {
   children: ReactNode;
 };
 
-function Render<T>({ children, when }: RenderProps<T>): JSX.Element | null {
-  if (!when) {
-    return null;
-  }
-
-  return <Fragment>{children}</Fragment>;
-}
-
-export { Render };
+export const Render = <T,>({ children, when }: RenderProps<T>): JSX.Element | null =>
+  when ? <Fragment>{children}</Fragment> : null;

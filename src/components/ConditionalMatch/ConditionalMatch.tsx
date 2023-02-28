@@ -16,31 +16,17 @@ const ConditionalMatch = ({ fallback, children = null, multiMatch = false }: Con
     const childrenToRender: JSX.Element[] = [];
 
     Children.forEach(children, (child) => {
-      if (child?.type !== Render) {
+      if (child?.type !== Render || (!multiMatch && childrenToRender?.length >= 1) || !child?.props?.when) {
         return;
       }
-
-      if (!multiMatch && childrenToRender?.length >= 1) {
-        return;
-      }
-
-      if (child?.props?.when) {
-        childrenToRender.push(child);
-      }
+      childrenToRender.push(child);
     });
 
     return childrenToRender;
   }, [children, multiMatch]);
 
-  if (matchedChildren?.length) {
-    return <Fragment>{matchedChildren}</Fragment>;
-  }
-
-  return <Fragment>{fallback}</Fragment>;
+  return <Fragment>{matchedChildren?.length ? matchedChildren : fallback}</Fragment>;
 };
 
-const ConditionalMatchCompound = Object.assign(ConditionalMatch, {
-  Render,
-});
-
-export { ConditionalMatchCompound as ConditionalMatch };
+ConditionalMatch.Render = Render;
+export { ConditionalMatch };
