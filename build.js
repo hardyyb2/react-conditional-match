@@ -5,7 +5,7 @@ const { dependencies } = require("./package.json");
 
 const sharedConfig = {
   bundle: true,
-  entryPoints: ["./src/index.tsx"],
+  entryPoints: ["./src/index.ts"],
   // Treat all dependencies in package.json as externals to keep bundle size to a minimum
   external: Object.keys(dependencies),
   logLevel: "info",

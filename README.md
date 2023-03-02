@@ -5,13 +5,18 @@
 
 A lightweight and flexible React component for conditional rendering that supports multiple matches and fallbacks.
 
+Use it to implement complex rendering logic without having to write complex conditional logic with ternaries or if-else blocks.
+
 [DEMO](https://stackblitz.com/edit/vitejs-vite-sz2s9x)
 
 ## Features
 
+- **Multiple render conditions**: With ConditionalMatch, you can specify multiple conditions for rendering different components based on the current state of the application.
+
 - **Supports multiple matches**: Use the <code>ConditionalMatch </code>component to render multiple children based on the conditions you define. The component will render all children that match the condition.
 - **Supports fallback**: Use the "fallback" prop to provide a fallback for when none of the children match the condition.
-- **Lightweight and flexible**: The ConditionalMatch component is small and can be easily integrated into any React project. Use it to implement complex rendering logic without having to write complex conditional logic with ternaries or if-else blocks.
+- **TypeScript support**: ConditionalMatch is built with TypeScript and provides type definitions for easy integration into TypeScript projects.
+- **Lightweight and flexible**: The ConditionalMatch component is small and can be easily integrated into any React project.
 
 ## Installation
 
@@ -35,7 +40,7 @@ pnpm i @dx-kit/react-conditional-match
 
 ## Usage
 
-> **See more examples here** - [https://stackblitz.com/edit/vitejs-vite-sz2s9x](https://stackblitz.com/edit/vitejs-vite-sz2s9x)
+> **See more examples here** - [examples](https://stackblitz.com/edit/vitejs-vite-sz2s9x)
 
 To use the ConditionalMatch component in your React project, you need to import it and use it in your JSX code.
 
@@ -58,11 +63,25 @@ const MyComponent = () => {
 
 In this example, the ConditionalMatch component will render the first child that matches one of the conditions. If none of the children match the condition, the component will render the fallback element.
 
-### Usage compared with _if-else_ and _ternary_
+```typescript
+<ConditionalMatch fallback='Initial state'>
+  <Render when={loading}>Loading...</Render>
+  <Render when={data?.length}>
+    <DataComp data={data} />
+  </Render>
+  <Render when={error}>{error}</Render>
+</ConditionalMatch>
+```
 
-| if-else                          | ternary                          | ConditionalMatch                                    |
-| -------------------------------- | -------------------------------- | --------------------------------------------------- |
-| ![if-else](./assets/if-else.png) | ![ternary](./assets/ternary.png) | ![ConditionalMatch](./assets/conditional-match.png) |
+## Usage compared with _if-else_ and _ternary_
+
+|                      | Image                                                | Description                                                                                       |
+| -------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| **if-else**          | ![if-else](./assets/if-else.png)                     | - Simple syntax<br>- Easy to read                                                                 |
+| **ternary**          | ![ternary](./assets/ternary.png)                     | - More concise <br /> - Harder to read.                                                           |
+| **ConditionalMatch** | ![conditional-match](./assets/conditional-match.png) | - Easy nesting <br/> - Simple syntax <br /> - Easy to read <br /> - Supports **multiple matches** |
+
+<br/>
 
 ## Props
 
