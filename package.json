@@ -1,6 +1,6 @@
 {
   "name": "@dx-kit/react-conditional-match",
-  "version": "2.2.7",
+  "version": "3.0.0",
   "description": "A flexible and reusable React component for conditionally rendering child elements. The component supports options for handling multiple matching children and custom fallbacks, and is lightweight and easy to use. This component can help simplify complex rendering logic in your React application and remove the need for ternary statements and if else blocks.",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
@@ -39,7 +39,7 @@
   "author": "hardik badola (hardyyb2)",
   "license": "MIT",
   "peerDependencies": {
-    "react": ">=18"
+    "react": ">=17"
   },
   "files": [
     "dist",
@@ -47,15 +47,15 @@
     "README.md"
   ],
   "dependencies": {
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.4.3",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^14.0.3",
     "@types/jest": "^29.4.0",
     "@types/node": "^18.14.2",
     "@types/testing-library__jest-dom": "^5.14.5",
@@ -73,6 +73,7 @@
     "jsdom": "^21.1.0",
     "prettier": "^2.8.4",
     "typescript": "^4.9.5",
+    "vite": "^4.1.4",
     "vitest": "^0.29.1"
   }
 }
