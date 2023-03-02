@@ -102,4 +102,4 @@ In this example, the ConditionalMatch component will render the first child that
 
 ## Contributing
 
-If you find a bug or have an idea for a new feature, feel free to submit an issue or pull request on the GitHub repository: [https://github.com/hardyyb2/dx-kit.git](https://github.com/hardyyb2/dx-kit.git)
+If you find a bug or have an idea for a new feature, feel free to submit an issue or pull request on the GitHub repository: [https://github.com/hardyyb2/react-conditional-match.git](https://github.com/hardyyb2/react-conditional-match.git)

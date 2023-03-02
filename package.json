@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hardyyb2/dx-kit.git"
+    "url": "git+https://github.com/hardyyb2/react-conditional-match.git"
   },
   "keywords": [
     "react",
